@@ -189,14 +189,13 @@ void AccountListPage::on_actionAddOffline_triggered()
    
         QMessageBox::warning(	// The only change in this fork
             this,	
-            tr("Error"),	//    if (!m_accounts->anyAccountIsValid()) {
+            tr("Please, we don't wanna to get sued!"),	//    if (!m_accounts->anyAccountIsValid()) {
             tr(	//        QMessageBox::warning(
-                "You must add a Microsoft or Mojang account that owns Minecraft before you can add an offline account."	//            this,
-                "<br><br>"	//            tr("Error"),
-                "If you have lost your account you can contact Microsoft for support."	//            tr(
+                "By using an offline account, you promise that you have an Minecraft account."	//            this,
+          tr(
             )	//                "You must add a Microsoft or Mojang account that owns Minecraft before you can add an offline account."
         );	//                "<br><br>"
-        return;	//                "If you have lost your account you can contact Microsoft for support."
+	//                "If you have lost your account you can contact Microsoft for support."
     }	//            )
 //        );
 //        return;
